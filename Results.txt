@@ -1,0 +1,38 @@
+Ran 200 realizations
+
+Intrinsic permeability, continuum physics (m^2):
+  P90 (conservative): 6.193e-19
+  P50 (most likely):  6.764e-19
+  P10 (optimistic):   7.475e-19
+
+Apparent permeability, Knudsen-corrected (m^2):
+  P90 (conservative): 6.904e-19
+  P50 (most likely):  7.510e-19
+  P10 (optimistic):   8.284e-19
+
+Physics-only correction ratio (P50 apparent / P50 intrinsic): 1.110x
+
+CO2-EOR recovery factor (at breakthrough):
+  P90 (conservative): 0.187
+  P50 (most likely):  0.254
+  P10 (optimistic):   0.339
+
+Surrogate model for apparent permeability:
+  R^2 on held-out test set: -0.113
+  Feature importance:
+    mean_throat_radius: 0.000
+    std_throat_radius: 0.000
+    mean_Kn: 0.000
+    n_throats: 0.000
+    shortest_path_length: 0.000
+
+Surrogate model for CO2-EOR recovery factor:
+  R^2 on held-out test set: -0.328
+  Feature importance:
+    shortest_path_length: 0.390
+    mean_Kn: 0.385
+    n_throats: 0.226
+    mean_throat_radius: 0.000
+    std_throat_radius: 0.000
+
+(RandomForestRegressor(n_estimators=200, random_state=42), -0.3280555195499961)
